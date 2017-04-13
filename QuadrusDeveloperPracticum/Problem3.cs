@@ -103,7 +103,6 @@ namespace Problem3NS
                currentNode.children[i] = temp[i];
             }
             success = true;
-            return success;
          }
          //number of children outnumber new value, resize array and move excess children down
          else
@@ -121,8 +120,8 @@ namespace Problem3NS
                findEmptyChild(currentNode, temp[j]);
             }
             success = true;
-            return success;
          }
+         return success;
       }
 
       public int countChildren(Node currentNode)
